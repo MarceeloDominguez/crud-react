@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Popping', sans-serif;
+    background: rgba(241, 244, 245, 0.5);
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-label {
+    cursor: pointer;
+    font-weight: 700;
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+    border-radius: 3px;
+    height: 45px;
+    font-size: 2rem;
+    padding: 10px;
+    border: 2px solid #0075ff;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.5);
+}
+
+.form-input:hover {
+    border: 1px solid rgb(48, 175, 248);
+}
+
+.div-boton {
+    display: flex;
+    justify-content: center;
+}
+
+.form-btn {
+    height: 45px;
+    width: 50%;
+    background: #0075ff;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s ease all;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.5);
+}
+
+.form-btn:focus {
+    box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.form-btn:hover {
+    color: white;
+    background: rgb(48, 175, 248);
+}
+
+/** datos en el dom **/
+
+.informacion-dom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-datos {
+    min-width: 120%;
+}
+
+@media screen and (max-width: 900px){
+    .lista-datos {
+        min-width: 100%;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-btn {
+        width: 100%;
+    }
+}
+
+.datos {
+    width: 100%;
+    padding: 0.2rem 0.2rem;
+    border: 1px solid rgb(48, 175, 248);
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.5);
+    background: rgb(48, 175, 248, 0.5);
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+.delete-btn {
+    border: none;
+    outline: none;
+    background: red;
+    color: white;
+    width: 30px;
+    height: 37px;
+}
+
+.delete-btn:hover {
+    background:  rgba(238, 5, 5, 0.5);
+}
+
+.edit-btn {
+    border: none;
+    outline: none;
+    background: tomato;
+    color: white;
+    width: 30px;
+    height: 37px;
+}
+
+.edit-btn:hover {
+    background:  rgba(245, 149, 23, 0.5);
+}
+
+.check-btn {
+    border: none;
+    outline: none;
+    background: green;
+    color: white;
+    width: 30px;
+    height: 37px;
+}
+
+.check-btn:hover {
+    background:  rgba(76, 252, 155, 0.5);
+}
+ 
+.clear-list {
+    height: 45px;
+    width: 50%;
+    background: red;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s ease all;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.5);
+    margin-top: 1rem;
+}
+
+.form-btn-edit {
+    height: 45px;
+    width: 50%;
+    background: rgb(125, 196, 125);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s ease all;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.5);
+}
+
+.mensaje-error {
+    color: rgb(245, 50, 50);
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
